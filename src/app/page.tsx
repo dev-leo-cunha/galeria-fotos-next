@@ -22,9 +22,9 @@ const Page = () => {
     <div
       className="flex justify-center items-center flex-col min-h-screen bg-black text-white"
     >
-      <div className="bold text-4xl mb-7">Fotos Intergalácticas</div>
+      <div className="bold text-4xl mb-7 max-sm:text-2xl">Fotos Intergalácticas</div>
       <div
-        className="container max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         {Photos.map((photo, index) => (
           <PhotoComponent index={index} photo={photo} openModal={openModal} />
